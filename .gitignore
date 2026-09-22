@@ -13,6 +13,7 @@ xcuserdata/
 
 # Build products
 build/
+dist/
 DerivedData/
 *.moved-aside
 *.pbxuser
