@@ -4,6 +4,12 @@ Version 1.3.1
 
 A macOS menu bar app for managing and expanding text snippets — keyboard triggers, dynamic variables, fill-in template prompts, tag-based organization, a bounded clipboard history, and a Spotlight-style quick-access window you can summon from anywhere with a global hotkey.
 
+<p align="center">
+  <img src="screenshots/snippet-list.png" alt="Snipster snippet list with tag sorting" height="320">
+  <img src="screenshots/new-snippet.png" alt="Snipster new snippet editor" height="320">
+  <img src="screenshots/settings.png" alt="Snipster settings" height="320">
+</p>
+
 ## What changed in 1.3.1
 
 Snippets can now pause expansion and ask for values instead of only substituting automatic variables — a new `{{INPUT:label}}` token pops a small window with one field per distinct label, turning a snippet into a real fill-in-the-blank template. Any field that looks like it wants a name, email, phone number, or company can be filled straight from a contact, via a small button beside the field that opens a proper contact-picker window. This release also fixes a handful of real bugs found while building that (blank fields pasting literal `{{INPUT:...}}` tags, a paste that could silently fail after submitting the popup, two icon buttons with a dead-zone in their clickable area, a mis-centered alert) and finishes removing the old iCloud/OneDrive-specific storage code left over from 1.3. Full details are in [CHANGELOG.md](CHANGELOG.md).
